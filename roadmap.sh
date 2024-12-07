@@ -1,0 +1,3 @@
+- Feedback mais sofisticado com animações.
+- Armazenamento seguro de tokens com Firebase ou local storage.
+- Implementação de uma tela de carregamento durante operações assíncronas.

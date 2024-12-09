@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 import { buttonPresets, ButtonPreset } from './style';
 import { Text } from '../Text/Text';
 
-// Definições de tipos para o botão
 interface ButtonProps {
   title: string;
   loading?: boolean;

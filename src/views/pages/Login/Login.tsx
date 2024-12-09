@@ -78,6 +78,7 @@ export const Login = () => {
         />
         <TextInput
           label="Senha"
+          type="password"
           inputprops={{
             placeholder: 'Digite sua senha',
             value: password,

@@ -1,4 +1,3 @@
-// src/hooks/useRouteGuard.tsx
 import { getUserRole } from '@app/config/fireBaseRoles';
 import { useAuth } from '@app/contexts/AuthProvider/AuthProvider';
 import { useState, useEffect } from 'react';

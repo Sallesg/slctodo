@@ -1,5 +1,4 @@
 import { Routes, Route, Navigate } from 'react-router-dom';
-// import { useAuth } from '../contexts/AuthProvider/AuthProvider';
 import { Login } from '@views/pages/Login/Login';
 import { DashboardTasks } from '@views/pages/DashboardTasks/DashboardTasks';
 import { UserRegister } from '@views/pages/UserRegister/UserRegister';

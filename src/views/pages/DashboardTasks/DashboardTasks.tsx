@@ -18,6 +18,7 @@ export const DashboardTasks = () => {
     id: string;
     title: string;
     description: string;
+    dueData: string;
     priority: string;
     status: string;
   } | null>(null);
@@ -30,12 +31,16 @@ export const DashboardTasks = () => {
   const handleEditTask = (task: {
     id: string;
     title: string;
-    description: string;
+    description?: string;
+    dueData?: string;
     priority?: string;
     status?: string;
   }) => {
     setTaskToEdit({
-      ...task,
+      id: task.id,
+      title: task.title,
+      description: task.description ?? '',
+      dueData: task.dueData ?? '',
       priority: task.priority ?? '',
       status: task.status ?? '',
     });
@@ -48,7 +53,7 @@ export const DashboardTasks = () => {
         <SideBar />
         <MainContent>
           <Header>
-            <NewTaskButton onClick={handleCreateTask}>
+            <NewTaskButton onClick={handleCreateTask} data-testid="new-task">
               <Icon name="newTask" />
             </NewTaskButton>
           </Header>

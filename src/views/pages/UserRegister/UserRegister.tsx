@@ -1,5 +1,3 @@
-// src/pages/UserRegister.tsx
-
 import { useEffect, useState } from 'react';
 import { Text } from '@views/components/Text/Text';
 

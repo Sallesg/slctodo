@@ -97,7 +97,6 @@ export const TaskProvider = ({ children }: { children: React.ReactNode }) => {
 
     try {
       const docRef = await addDoc(collection(db, 'tasks'), newTask);
-      console.log('Tarefa salva com ID:', docRef.id);
       setTasks((prevTasks) => [...prevTasks, { id: docRef.id, ...newTask }]);
     } catch (error) {
       console.error('Erro ao adicionar tarefa:', error);
@@ -121,8 +120,6 @@ export const TaskProvider = ({ children }: { children: React.ReactNode }) => {
     priority: string,
     status: string,
   ) => {
-    console.log('Editando tarefa no Firebase:', id, title, description); // Log para verificar valores
-
     try {
       const taskDoc = doc(db, 'tasks', id);
       await updateDoc(taskDoc, {
@@ -134,7 +131,6 @@ export const TaskProvider = ({ children }: { children: React.ReactNode }) => {
         updatedAt: new Date(),
       });
 
-      console.log('Tarefa atualizada no Firebase');
       setTasks((prevTasks) =>
         prevTasks.map((task) =>
           task.id === id

@@ -1,7 +1,5 @@
 # Project Name: slctodo
 
-- Deploy: ()
-
 ## technologies used and why:
 
 - [Vite](https://vitejs.dev/guide/): Lightning-fast dev server, optimized builds, seamless HMR, minimal config, modern ecosystem integration. Boost your development speed.

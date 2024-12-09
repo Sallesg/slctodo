@@ -37,7 +37,7 @@
 1. Clone this repository to your local machine:
 
    ```bash
-       git clone https://github.com/Sallesg/hostfully-challenge.git
+       git clone https://github.com/Sallesg/slctodo.git
    ```
 
 2. Navigate into the project directory:
